@@ -1,6 +1,6 @@
 package com.customercrud.customerfeedback.entity;
 
-import com.customercrud.customerfeedback.core.UserType;
+import com.customercrud.customerfeedback.coreclass.UserType;
 import com.sun.istack.internal.NotNull;
 import lombok.Getter;
 import lombok.Setter;

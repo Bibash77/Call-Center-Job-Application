@@ -6,6 +6,41 @@
   <component name="ChangeListManager">
     <list default="true" id="cb44dff9-3b69-4c44-9656-0d044b6fe0f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/HomeStayFeedBackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/HomeStayFeedBackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/core/UserConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/coreclass/UserConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/core/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/coreclass/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/CustomerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/CustomerResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/feedback/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/feedback/FeedbackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/feedback/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/feedback/FeedbackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/homestay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/HomeStayFeedBackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/HomeStayFeedBackApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/core/UserConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/core/UserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/FeedbackController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/ViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/feedback/FeedbackService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/feedback/FeedbackServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/user/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/user/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/homestay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +108,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="homestayfeedback" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.customercrud.customerfeedback.HomeStayFeedBackApplication" />
@@ -119,7 +165,7 @@
       <workItem from="1605751212617" duration="22120000" />
       <workItem from="1605845362992" duration="14710000" />
       <workItem from="1605875505122" duration="2378000" />
-      <workItem from="1606015736786" duration="2592000" />
+      <workItem from="1606015736786" duration="6458000" />
     </task>
     <task id="LOCAL-00001" summary="configuration">
       <created>1605782950284</created>
@@ -149,27 +195,27 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/CustomerService.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/CustomerService.java</url>
           <line>5</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/ViewController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/ViewController.java</url>
           <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/ViewController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/ViewController.java</url>
           <line>98</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/FeedbackController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/FeedbackController.java</url>
           <line>52</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/ViewController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/ViewController.java</url>
           <line>61</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -184,7 +230,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/FeedbackController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/FeedbackController.java</url>
           <line>61</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>

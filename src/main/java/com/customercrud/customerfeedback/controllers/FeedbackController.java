@@ -1,9 +1,9 @@
-package com.customercrud.customerfeedback.resources;
+package com.customercrud.customerfeedback.controllers;
 
 import com.customercrud.customerfeedback.entity.FeedBack;
 import com.customercrud.customerfeedback.entity.User;
-import com.customercrud.customerfeedback.services.feedback.FeedbackService;
-import com.customercrud.customerfeedback.services.user.UserService;
+import com.customercrud.customerfeedback.service.feedback.FeedbackService;
+import com.customercrud.customerfeedback.service.user.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
