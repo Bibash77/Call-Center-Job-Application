@@ -4,44 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb44dff9-3b69-4c44-9656-0d044b6fe0f6" name="Default Changelist" comment="configuration">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a7e50e4-45e2-4d71-91cb-eaa80217ef1b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/HomeStayFeedBackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/HomeStayFeedBackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/core/UserConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/coreclass/UserConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/core/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/coreclass/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/CustomerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/CustomerResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/resources/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/controllers/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/feedback/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/feedback/FeedbackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/feedback/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/feedback/FeedbackServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/services/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/customercrud/customerfeedback/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/homestay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+    <list default="true" id="cb44dff9-3b69-4c44-9656-0d044b6fe0f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/HomeStayFeedBackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/HomeStayFeedBackApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/core/UserConst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/core/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/FeedbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/resources/ViewController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/feedback/FeedbackService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/feedback/FeedbackServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/user/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/customercrud/customerfeedback/services/user/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/homestay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -183,7 +147,7 @@
       <workItem from="1605751212617" duration="22120000" />
       <workItem from="1605845362992" duration="14710000" />
       <workItem from="1605875505122" duration="2378000" />
-      <workItem from="1606015736786" duration="6458000" />
+      <workItem from="1606015736786" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="configuration">
       <created>1605782950284</created>
@@ -199,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605870931814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="configuration">
+      <created>1606040806140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606040806140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,68 +179,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuration" />
     <option name="LAST_COMMIT_MESSAGE" value="configuration" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="288" y="0" key="CommitChangelistDialog2" timestamp="1606038042840">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="288" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1606038042840" />
-    <state x="129" y="55" width="1092" height="619" key="DiffContextDialog" timestamp="1606037997563">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="129" y="55" width="1092" height="619" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1606037997563" />
-    <state width="577" height="259" key="GridCell.Tab.0.bottom" timestamp="1606037835030">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606037835030" />
-    <state width="577" height="259" key="GridCell.Tab.0.center" timestamp="1606037835030">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606037835030" />
-    <state width="577" height="259" key="GridCell.Tab.0.left" timestamp="1606037835030">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606037835030" />
-    <state width="577" height="259" key="GridCell.Tab.0.right" timestamp="1606037835030">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606037835030" />
-    <state width="577" height="259" key="GridCell.Tab.1.bottom" timestamp="1606037932056">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606037932056" />
-    <state width="577" height="259" key="GridCell.Tab.1.center" timestamp="1606037932055">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1606037932055" />
-    <state width="577" height="259" key="GridCell.Tab.1.left" timestamp="1606037932055">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1606037932055" />
-    <state width="577" height="259" key="GridCell.Tab.1.right" timestamp="1606037932056">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1606037932056" />
-    <state width="577" height="259" key="GridCell.Tab.2.bottom" timestamp="1606037834920">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606037834920" />
-    <state width="577" height="259" key="GridCell.Tab.2.center" timestamp="1606037834919">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1606037834919" />
-    <state width="577" height="259" key="GridCell.Tab.2.left" timestamp="1606037834919">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1606037834919" />
-    <state width="577" height="259" key="GridCell.Tab.2.right" timestamp="1606037834920">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="577" height="259" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1606037834920" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606035639755">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1606035639755" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -182,7 +182,7 @@
 
                 </form>
                 <div class="copy-text">
-                    <p>${error}</p>
+                    <p class="text-danger">${error}</p>
                     <button  class="btn secondary" data-toggle="modal" data-target="#registerModal">
                         Register
                     </button>
@@ -201,7 +201,7 @@
                                  alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="banner-text">
-                                    <h2>Welcome to Mother Trisha School</h2>
+                                    <h2>Welcome to Mother Treesta School</h2>
                                     <p>Mother Trisha School is a multicultural community in the foothills of the
                                         Himalayas
                                         that inspires in each student a passion for learning, the confidence and

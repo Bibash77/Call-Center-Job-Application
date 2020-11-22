@@ -1,6 +1,6 @@
 package com.customercrud.customerfeedback.controllers;
 
-import com.customercrud.customerfeedback.core.UserConst;
+import com.customercrud.customerfeedback.coreclass.UserConst;
 import com.customercrud.customerfeedback.entity.FeedBack;
 import com.customercrud.customerfeedback.entity.User;
 import com.customercrud.customerfeedback.service.feedback.FeedbackService;

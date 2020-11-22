@@ -35,7 +35,7 @@ public class ViewController {
         // todo find user type and return view according to it
         User user = userService.findByUserName(username);
         if (user == null) {
-            modelMap.put("error" , "user not found");
+            modelMap.put("error" , "user not found!!");
             return "index";
         }
         if(!user.getPasword().equals(password)){
