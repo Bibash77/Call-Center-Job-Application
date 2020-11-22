@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="header.jsp"/>
+<jsp:include page="summary.jsp"/>
 <html>
 <head>
     <title>Dashboard</title>
@@ -17,23 +18,23 @@
         <button type="button" class="btn background" data-toggle="modal" data-target="#exampleModal">
             Register User
         </button>   </a>
-        <a href="${pageContext.request.contextPath}/feedback-list">
+        <a href="${pageContext.request.contextPath}/questionAnswer-list">
             <button type="button" class="btn btn-success ml-4">
-                View Feedbacks
+                View All Answer
             </button>
         </a>
     </div>
     <%--action to be shown if user type is normal user--%>
     <div class="row justify-content-center" id="user-block" hidden>
-        <a href="${pageContext.request.contextPath}/feed-back">
+        <a href="${pageContext.request.contextPath}/questionAnswer">
             <button type="button" class="btn background ml-4">
-                Give Feedback
+                Give Exam
             </button>
 
         </a>
-        <a onclick="window.location.href= '/feed-back/'+ sessionStorage.getItem('userId')">
+        <a onclick="window.location.href= '/questionAnswer/'+ sessionStorage.getItem('userId')">
             <button type="button" class="btn btn-success ml-4">
-                My Feedback
+                View My Answer
             </button>
 
         </a>

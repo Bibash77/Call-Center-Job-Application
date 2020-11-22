@@ -1,6 +1,6 @@
-package com.customercrud.customerfeedback.entity;
+package com.customercrud.callCenter.entity;
 
-import com.customercrud.customerfeedback.core.UserType;
+import com.customercrud.callCenter.core.UserType;
 import com.sun.istack.internal.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,5 +38,5 @@ public class User {
     private UserType userType;
 
     @OneToOne
-    private FeedBack feedBack;
+    private QuestionAnswer questionAnswer;
 }

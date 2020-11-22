@@ -1,7 +1,7 @@
-package com.customercrud.customerfeedback.services.user;
+package com.customercrud.callCenter.services.user;
 
-import com.customercrud.customerfeedback.core.UserType;
-import com.customercrud.customerfeedback.entity.User;
+import com.customercrud.callCenter.core.UserType;
+import com.customercrud.callCenter.entity.User;
 
 import java.util.List;
 

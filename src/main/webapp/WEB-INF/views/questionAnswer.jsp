@@ -413,16 +413,16 @@
   };
   function submitForm() {
     let allData = {};
-    let feedbackData = {};
-    const feedback = $('#question-form').serializeArray();
+    let questionAnswerData = {};
+    const questionAnswer = $('#question-form').serializeArray();
     let totalmarks = 0;
-    console.log(feedback);
-    if(feedback.length < 11){
+    console.log(questionAnswer);
+    if(questionAnswer.length < 11){
       alert("please fill all data");
       return;
     }
-    feedback.forEach(data => {
-      feedbackData[data.name] = data.value;
+    questionAnswer.forEach(data => {
+      questionAnswerData[data.name] = data.value;
       if(correctAnswer[data.name] === data.value) {
         totalmarks += 5;
       }
@@ -431,9 +431,9 @@
       }
     });
     allData['totalPoint'] = totalmarks;
-    allData['ratingData'] = JSON.stringify(feedbackData);
+    allData['ratingData'] = JSON.stringify(questionAnswerData);
     $.ajax({
-      url:"${pageContext.request.contextPath}/feedback/save/"+ sessionStorage.getItem("userId"),
+      url:"${pageContext.request.contextPath}/questionAnswer/save/"+ sessionStorage.getItem("userId"),
       type:"post",
       contentType:"application/json",
       data: JSON.stringify(allData),

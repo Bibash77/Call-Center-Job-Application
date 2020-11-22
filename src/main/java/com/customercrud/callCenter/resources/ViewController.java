@@ -1,9 +1,9 @@
-package com.customercrud.customerfeedback.resources;
+package com.customercrud.callCenter.resources;
 
-import com.customercrud.customerfeedback.core.UserType;
-import com.customercrud.customerfeedback.entity.User;
-import com.customercrud.customerfeedback.services.feedback.FeedbackService;
-import com.customercrud.customerfeedback.services.user.UserService;
+import com.customercrud.callCenter.core.UserType;
+import com.customercrud.callCenter.entity.User;
+import com.customercrud.callCenter.services.questionAnswer.QuestionAnswerService;
+import com.customercrud.callCenter.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -23,7 +23,7 @@ public class ViewController {
     private UserService userService;
 
     @Autowired
-    private FeedbackService feedbackService;
+    private QuestionAnswerService questionAnswerService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap model) {
@@ -52,26 +52,26 @@ public class ViewController {
         return "dashboard";
     }
 
-    @GetMapping("/feed-back")
-    public String loadFeedback(){
-        return "feedback";
+    @GetMapping("/questionAnswer")
+    public String loadQuestionAnswer(){
+        return "questionAnswer";
     }
 
-    @GetMapping("/feedback-list")
-    public String loadFeedbackList(ModelMap modelMap){
-        List<User> users = userService.findUserByUserType(UserType.USER); // only client user can give feedback
+    @GetMapping("/questionAnswer-list")
+    public String loadQuestionAnswerList(ModelMap modelMap){
+        List<User> users = userService.findUserByUserType(UserType.USER); // only client user can give questionAnswer
         modelMap.put("users" , users);
-        return "feedback-list";
+        return "questionAnswer-list";
     }
 
-    @GetMapping("/feed-back/{id}")
-    public String loadFeedbackIndividual(@PathVariable String id, ModelMap modelMap){
-        User user = userService.findById(Integer.valueOf(id));
-        modelMap.put("user" , user);
-        return "individual-feedback";
-    }
+//    @GetMapping("/questionAnswer/{id}")
+//    public String loadQuestionAnswerIndividual(@PathVariable String id, ModelMap modelMap){
+//        User user = userService.findById(Integer.valueOf(id));
+//        modelMap.put("user" , user);
+//        return "individual-questionAnswer";
+//    }
     @GetMapping("/summary")
-    public String loadFeedbackList(){
+    public String loadQuestionAnswerList(){
         return "summary";
     }
 

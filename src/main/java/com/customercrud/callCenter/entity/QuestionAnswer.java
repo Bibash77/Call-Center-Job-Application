@@ -1,4 +1,4 @@
-package com.customercrud.customerfeedback.entity;
+package com.customercrud.callCenter.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,13 +6,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FeedBack {
+public class QuestionAnswer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
