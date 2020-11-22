@@ -1,5 +1,6 @@
 package com.customercrud.customerfeedback.controllers;
 
+import com.customercrud.customerfeedback.core.UserConst;
 import com.customercrud.customerfeedback.entity.FeedBack;
 import com.customercrud.customerfeedback.entity.User;
 import com.customercrud.customerfeedback.service.feedback.FeedbackService;
@@ -26,30 +27,24 @@ public class FeedbackController {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @PostMapping("/save/{id}")
-    public ResponseEntity<?> saveFeedback(@RequestBody Map<String , String> feedback,
-    @PathVariable String id) throws JsonProcessingException {
-       try {
-           User user = userService.findById(Integer.parseInt(id));
-           String jsonValue =  objectMapper.writeValueAsString(feedback);
-           FeedBack feedBackData = new FeedBack();
-           Integer totalPoint = 0;
-           int count = 0;
-           for(Map.Entry<String, String> entry : feedback.entrySet()) {
-               if (isInt(entry.getValue())){
-                   totalPoint += Integer.parseInt(entry.getValue());
-                   count += 1;
-               }
-               feedBackData.setComments(feedback.get("suggestion"));
-               feedBackData.setRating(totalPoint/count);
-               feedBackData.setRatingData(jsonValue);
-               feedBackData.setCommentedAt(LocalDate.now());
-                // saving feed back in feed back table
-               user.setFeedBack(feedbackService.addFeedBack(feedBackData));
-               userService.addUser(user);
-           }
-       } catch (Exception exception){
-             return ResponseEntity.badRequest().body("unable to save your data !!");
-       }
+    public ResponseEntity<?> saveFeedback(@RequestBody FeedBack feedback,
+        @PathVariable String id) {
+        try {
+            User user = userService.findById(Integer.parseInt(id));
+            FeedBack savefeedBackData = new FeedBack();
+            Double percentObtain = feedback.getTotalPoint()/ UserConst.FULL_MARK * 100;
+            savefeedBackData.setTotalPercentage(percentObtain);
+            savefeedBackData.setRatingData(feedback.getRatingData());
+            savefeedBackData.setId(Integer.parseInt(id));
+            savefeedBackData.setSubbmittedAt(LocalDate.now());
+            savefeedBackData.setTotalPoint(feedback.getTotalPoint());
+
+            user.setFeedBack(feedbackService.addFeedBack(savefeedBackData));
+            userService.addUser(user);
+
+        } catch (Exception exception){
+            return ResponseEntity.badRequest().body("unable to save your data !!");
+        }
         return ResponseEntity.ok().body("succesfully submitted your feedback !!");
     }
 

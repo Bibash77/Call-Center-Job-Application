@@ -21,10 +21,9 @@ public class FeedBack {
     @Lob // lob defines long text data field
     private String ratingData;
 
-    @Lob
-    private String comments;
+    private Double totalPercentage;
 
-    private Integer rating;
+    private Integer totalPoint;
 
-    private LocalDate commentedAt;
+    private LocalDate subbmittedAt;
 }
