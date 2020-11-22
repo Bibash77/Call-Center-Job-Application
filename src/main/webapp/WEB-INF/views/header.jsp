@@ -54,15 +54,8 @@
     </style>
 </head>
 <body>
-<%--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm background">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Pawan Home Stay</h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="${pageContext.request.contextPath}/home">Home</a>
-        <a class="p-2 text-dark" href="${pageContext.request.contextPath}/index">Logout</a>
-    </nav>
-</div>--%>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #808080;height: 50px" id="nav">
-    <a class="navbar-brand" href="/home">Pawan Home Stay</a>
+    <a class="navbar-brand" href="/home">Tristee Call Center</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

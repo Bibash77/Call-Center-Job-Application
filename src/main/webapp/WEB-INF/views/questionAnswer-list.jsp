@@ -66,7 +66,7 @@
                     <ul class="list-group mb-3" id="correct-answer">
                       <c:forEach items="${users}" var="user" varStatus="loop">
                           <li class="list-group-item d-flex justify-content-between lh-condensed cursor"
-                              onclick="window.location.href = '/feed-back/${user.id}'">
+                              onclick="window.location.href = '/questionAnswer/${user.id}'">
                               <div class="col-md-12">
                                   <span class="float-right">
                                      <input type="radio" name="location" id="q121" value="1" ${user.feedBack.rating >= 1? 'checked' : ''}>

@@ -1,9 +1,9 @@
-package com.customercrud.customerfeedback.controllers;
+package com.customercrud.callcenter.resources;
 
-import com.customercrud.customerfeedback.coreclass.UserType;
-import com.customercrud.customerfeedback.entity.User;
-import com.customercrud.customerfeedback.service.feedback.FeedbackService;
-import com.customercrud.customerfeedback.service.user.UserService;
+import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.entity.User;
+import com.customercrud.callcenter.services.questionAnswer.QuestionAnswerService;
+import com.customercrud.callcenter.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -23,7 +23,7 @@ public class ViewController {
     private UserService userService;
 
     @Autowired
-    private FeedbackService feedbackService;
+    private QuestionAnswerService questionAnswerService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap model) {
@@ -35,7 +35,7 @@ public class ViewController {
         // todo find user type and return view according to it
         User user = userService.findByUserName(username);
         if (user == null) {
-            modelMap.put("error" , "user not found!!");
+            modelMap.put("error" , "user not found");
             return "index";
         }
         if(!user.getPasword().equals(password)){
@@ -52,26 +52,26 @@ public class ViewController {
         return "dashboard";
     }
 
-    @GetMapping("/feed-back")
-    public String loadFeedback(){
-        return "feedback";
+    @GetMapping("/questionAnswer")
+    public String loadQuestionAnswer(){
+        return "questionAnswer";
     }
 
-    @GetMapping("/feedback-list")
-    public String loadFeedbackList(ModelMap modelMap){
-        List<User> users = userService.findUserByUserType(UserType.USER); // only client user can give feedback
+    @GetMapping("/questionAnswer-list")
+    public String loadQuestionAnswerList(ModelMap modelMap){
+        List<User> users = userService.findUserByUserType(UserType.USER); // only client user can give questionAnswer
         modelMap.put("users" , users);
-        return "feedback-list";
+        return "questionAnswer-list";
     }
 
-    @GetMapping("/feed-back/{id}")
-    public String loadFeedbackIndividual(@PathVariable String id, ModelMap modelMap){
+    @GetMapping("/question-answer/{id}")
+    public String loadQuestionAnswerIndividual(@PathVariable String id, ModelMap modelMap){
         User user = userService.findById(Integer.valueOf(id));
         modelMap.put("user" , user);
-        return "individual-feedback";
+        return "individual-questionAnswer";
     }
     @GetMapping("/summary")
-    public String loadFeedbackList(){
+    public String loadQuestionAnswerList(){
         return "summary";
     }
 

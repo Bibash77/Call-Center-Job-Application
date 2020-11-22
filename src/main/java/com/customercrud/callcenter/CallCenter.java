@@ -1,9 +1,9 @@
-package com.customercrud.customerfeedback;
+package com.customercrud.callcenter;
 
-import com.customercrud.customerfeedback.coreclass.UserConst;
-import com.customercrud.customerfeedback.coreclass.UserType;
-import com.customercrud.customerfeedback.entity.User;
-import com.customercrud.customerfeedback.repository.UserRepository;
+import com.customercrud.callcenter.core.UserConst;
+import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.entity.User;
+import com.customercrud.callcenter.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,17 +16,17 @@ import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableSwagger2
-public class HomeStayFeedBackApplication extends SpringBootServletInitializer {
+public class CallCenter extends SpringBootServletInitializer {
     @Autowired
     private UserRepository userRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(HomeStayFeedBackApplication.class, args);
+        SpringApplication.run(CallCenter.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(HomeStayFeedBackApplication.class);
+        return application.sources(CallCenter.class);
     }
 
     @PostConstruct
