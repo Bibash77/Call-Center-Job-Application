@@ -38,14 +38,14 @@
     </script>
     <style>
         .background {
-            background-image: linear-gradient(to bottom right, #00ffff, #045DE9);
+            background-image: linear-gradient(to bottom right, #DE6262, #fff);
         }
 
         .text-secondary {
-            color: #045DE9;
+            color: grey;
         }
         .secondary {
-            background-color: #1E3B70;
+            background-color: #808080;
         }
         .curor {
             cursor: pointer;
@@ -61,7 +61,7 @@
         <a class="p-2 text-dark" href="${pageContext.request.contextPath}/index">Logout</a>
     </nav>
 </div>--%>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1E3B70;height: 50px" id="nav">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #808080;height: 50px" id="nav">
     <a class="navbar-brand" href="/home">Pawan Home Stay</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

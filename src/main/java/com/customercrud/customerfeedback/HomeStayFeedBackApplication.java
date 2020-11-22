@@ -1,7 +1,7 @@
 package com.customercrud.customerfeedback;
 
-import com.customercrud.customerfeedback.core.UserConst;
-import com.customercrud.customerfeedback.core.UserType;
+import com.customercrud.customerfeedback.coreclass.UserConst;
+import com.customercrud.customerfeedback.coreclass.UserType;
 import com.customercrud.customerfeedback.entity.User;
 import com.customercrud.customerfeedback.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.customercrud.customerfeedback.services.feedback;
+package com.customercrud.customerfeedback.service.feedback;
 
 import com.customercrud.customerfeedback.entity.FeedBack;
 import com.customercrud.customerfeedback.repository.FeedbackRepository;
