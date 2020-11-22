@@ -1,4 +1,4 @@
-package com.customercrud.customerfeedback.coreclass;
+package com.customercrud.callcenter.core;
 
 public class UserConst {
     public static String DEFAULT_USERNAME = "admin";

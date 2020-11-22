@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/homestayfeedback.iml" filepath="$PROJECT_DIR$/homestayfeedback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/callCenter.iml" filepath="$PROJECT_DIR$/callCenter.iml" />
     </modules>
   </component>
 </project>

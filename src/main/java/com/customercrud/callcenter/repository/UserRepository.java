@@ -1,7 +1,7 @@
-package com.customercrud.customerfeedback.repository;
+package com.customercrud.callcenter.repository;
 
-import com.customercrud.customerfeedback.coreclass.UserType;
-import com.customercrud.customerfeedback.entity.User;
+import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

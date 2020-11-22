@@ -1,8 +1,8 @@
-package com.customercrud.customerfeedback.controllers;
+package com.customercrud.callcenter.resources;
 
-import com.customercrud.customerfeedback.coreclass.UserType;
-import com.customercrud.customerfeedback.entity.User;
-import com.customercrud.customerfeedback.service.user.UserService;
+import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.entity.User;
+import com.customercrud.callcenter.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;

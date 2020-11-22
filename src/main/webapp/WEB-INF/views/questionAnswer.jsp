@@ -77,20 +77,21 @@
         border: none;
         border-radius: 40px;
     }
+    
 
 </style>
 <body class="background">
 <div style="border: double #ffffff; margin-top: 110px;">
     <div class="row">
         <div class="offset-4 col-md-4">
-            <h4 class="text-white"><u>Submit Your FeedBack</u></h4>
+            <h4 class="text-white"><u>Submit Your Answers</u></h4>
         </div>
     </div>
     <form id="question-form">
         <div class="row">
 
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>1.When was Spice Nepal was rebranded as Mero Mobile?</label>
 
             <div class="custom-control custom-radio">
@@ -121,7 +122,7 @@
             </div>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>2) What is the call rate per min?</label>
             <div class="custom-control custom-radio">
                 <input id="callRate-2.54" name="callRate" type="radio" class="custom-control-input" value="a. 2.54Rs" required>
@@ -148,7 +149,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>3) How many time you can transfer the balance?</label>
             <div class="custom-control custom-radio">
                 <input id="balanceTranasferTimes-2" name="balanceTranasferTimes" type="radio" class="custom-control-input" value="a. 2" required>
@@ -175,7 +176,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>4) Postpaid user can take the loan</label>
             <div class="custom-control custom-radio">
                 <input id="postoaidUserLoan-true" name="postoaidUserLoan" type="radio" class="custom-control-input" value="a. True" required>
@@ -190,7 +191,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>5)How many time customer can freely call 9005?</label>
             <div class="custom-control custom-radio">
                 <input id="customerFreeCall-10" name="customerFreeCall" type="radio" class="custom-control-input" value="a. 10" required>
@@ -217,7 +218,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>6) Where customer can complain their problem?</label>
             <div class="custom-control custom-radio">
                 <input id="customerComplain-9005" name="customerComplain" type="radio" class="custom-control-input" value="a. 9005" required>
@@ -244,7 +245,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>7) Do you need Pin.no to transfer the balance?</label>
             <div class="custom-control custom-radio">
                 <input id="pin-yes" name="pin" type="radio" class="custom-control-input" value="a. Yes" required>
@@ -259,7 +260,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>8)  I have damaged the recharge pin.no but I have correct serial.no. Can I recharge it or not?</label>
             <div class="custom-control custom-radio">
                 <input id="recharge-yes" name="recharge" type="radio" class="custom-control-input" value="a. Yes" required>
@@ -274,7 +275,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>9) 4g is available in urban areas only?</label>
             <div class="custom-control custom-radio">
                 <input id="fourG-yes" name="fourG" type="radio" class="custom-control-input" value="a. True" required>
@@ -289,7 +290,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>10) How can you check if your name has been registered or not?</label>
             <div class="custom-control custom-radio">
                 <input id="nameRegister-901" name="nameRegister" type="radio" class="custom-control-input" value="a. *901#" required>
@@ -316,7 +317,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>11) What are the requirements to upgrade sim to 4g?</label>
             <div class="custom-control custom-radio">
                 <input id="requirements-100" name="requirements" type="radio" class="custom-control-input" value="a. Original Document/Photo/100Rs" required>
@@ -343,7 +344,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 pb-3">
             <label>12) How can you check your balance?</label>
             <div class="custom-control custom-radio">
                 <input id="balance-100" name="balance" type="radio" class="custom-control-input" value="a. *901#" required>
@@ -371,17 +372,7 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="offset-4 col-md-4">
-                <div class="form-group">
-                    <p>Any suggestions/comments:</p>
-                    <textarea placeholder="Any suggestions/comments" class="form-control" id="suggestion"
-                              style="background-color: lightblue;"
-                              rows="6" name="suggestion"></textarea>
-                </div>
-            </div>
-        </div>
-        <input type="button" class="btn-success" value="ok" id="submit" onclick="submitForm()">
+        <button type="button" class="btn btn-sucess" value="ok" id="submit" onclick="submitForm()">Submit Answer</button>
     </form>
 </div>
 
@@ -413,16 +404,16 @@
   };
   function submitForm() {
     let allData = {};
-    let feedbackData = {};
-    const feedback = $('#question-form').serializeArray();
+    let questionAnswerData = {};
+    const questionAnswer = $('#question-form').serializeArray();
     let totalmarks = 0;
-    console.log(feedback);
-    if(feedback.length < 11){
+    console.log(questionAnswer);
+    if(questionAnswer.length < 11){
       alert("please fill all data");
       return;
     }
-    feedback.forEach(data => {
-      feedbackData[data.name] = data.value;
+    questionAnswer.forEach(data => {
+      questionAnswerData[data.name] = data.value;
       if(correctAnswer[data.name] === data.value) {
         totalmarks += 5;
       }
@@ -431,9 +422,9 @@
       }
     });
     allData['totalPoint'] = totalmarks;
-    allData['ratingData'] = JSON.stringify(feedbackData);
+    allData['ratingData'] = JSON.stringify(questionAnswerData);
     $.ajax({
-      url:"${pageContext.request.contextPath}/feedback/save/"+ sessionStorage.getItem("userId"),
+      url:"${pageContext.request.contextPath}/questionAnswer/save/"+ sessionStorage.getItem("userId"),
       type:"post",
       contentType:"application/json",
       data: JSON.stringify(allData),
