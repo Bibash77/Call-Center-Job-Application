@@ -5,52 +5,27 @@
 <head>
     <title>Title</title>
     <style>
-        label:before {
-            content: '☆';
-            color: black;
-            font-size: 1em;
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
 
-        label.on:before {
-            content: '★';
-            color: #045DE9;
-            /* uncomment for iOS */
-            /*   font-size: 2.4em;
-              top: -0.1em;
-              left: -0.1em; */
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
         }
 
-        input:checked + label:before {
-            content: '★';
-            color: #045DE9;
-            /* uncomment for iOS */
-            /*   font-size: 2.4em;
-              top: -0.1em;
-              left: -0.1em; */
-        }
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-        label {
-            display: inline-block;
-            cursor: pointer;
-            position: relative;
-            padding-left: 15px;
-            margin-right: 15px;
-            font-size: 20px;
-        }
+        #customers tr:hover {background-color: #ddd;}
 
-        label:before {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin-right: 11px;
-            position: absolute;
-            left: 0;
-            border-radius: 11px;
-        }
-
-        input[type=radio] {
-            display: none;
-            -webkit-appearance: none;
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
@@ -58,10 +33,10 @@
 <div class="container" style="margin-top: 100px;">
     <div class="card">
         <div class="card-title secondary text-white">
-            <h3 class="text-center">Feedbacks</h3>
+            <h3 class="text-center">Job Applications</h3>
         </div>
         <div class="card-body">
-            <div class="row">
+            <%--<div class="row">
                 <div class="col-md-12 order-md-2 mb-4">
                     <ul class="list-group mb-3" id="correct-answer">
                       <c:forEach items="${users}" var="user" varStatus="loop">
@@ -101,7 +76,29 @@
                         <strong>Answers aren't available</strong>
                     </li>
                 </div>
-            </div>
+            </div>--%>
+            <table class="table table-bordered" id="customers">
+                <tr>
+                    <td>SN</td>
+                    <td>Username</td>
+                    <td>Email</td>
+                    <td>Gender</td>
+                    <td>Score</td>
+                    <td>Score %</td>
+                    <td>status</td>
+                </tr>
+                <c:forEach items="${users}" var="user" varStatus="loop">
+<tr style="cursor: pointer;" onclick="window.location.href= '/question-answer/${user.id}'">
+        <td>${loop.count}</td>
+        <td>${user.userName}</td>
+        <td>${user.email}</td>
+        <td>${user.gender}</td>
+        <td>${user.questionAnswer.totalPoint}</td>
+        <td>${user.questionAnswer.totalPercentage}%</td>
+        <td>${user.questionAnswer.totalPercentage > 40 ? 'pass' : 'fail'}</td>
+
+</tr>  </c:forEach>
+            </table>
         </div>
     </div>
 </div>

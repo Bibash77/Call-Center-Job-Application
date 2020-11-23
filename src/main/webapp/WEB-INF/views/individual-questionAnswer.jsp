@@ -92,32 +92,16 @@
                             <td><strong>Gender</strong></td>
                             <td>${user.gender}</td>
                         </tr>
-                        <tr>
-                            <td><strong>Comments/Suggestion</strong></td>
-                            <td>${user.feedBack.comments}</td>
-                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer">
-                    <strong>Overall Rating</strong>
-                    <span class="float-right">
-                                     <input type="checkbox" name="rating" id="r1"
-                                            value="1" ${user.feedBack.rating >= 1? 'checked' : ''}>
-            <label for="r1"></label>
-            <input type="checkbox" name="rating1" id="ra2" value="2" ${user.feedBack.rating >= 2? 'checked' : ''}>
-            <label for="ra2"></label>
-            <input type="checkbox" name="rating2" id="ra3" value="3" ${user.feedBack.rating >= 3? 'checked' : ''}>
-            <label for="ra3"></label>
-            <input type="checkbox" name="rating3" id="ra4" value="4" ${user.feedBack.rating >= 4? 'checked' : ''}>
-            <label for="ra4"></label>
-            <input type="checkbox" name="rating4" id="ra5" value="5" ${user.feedBack.rating >= 5? 'checked' : ''}>
-            <label for="ra5"></label>
-                                </span>
+                    <strong>Overall Status</strong>
+                    <span class="float-right">${user.questionAnswer.totalPercentage > 40 ? 'pass' : 'fail'}</span>
                 </div>
             </div>
         </div>
-        <div class="col-md-12" style="margin-top: 100px;">
+       <%-- <div class="col-md-12" style="margin-top: 100px;">
             <div class="card background shadow  p-3">
                 <div class="card-title">
                     <h6 class="text-center text-white">Feedbacks</h6>
@@ -288,7 +272,7 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div>--%>
     </div>
 
     <div class="row">
