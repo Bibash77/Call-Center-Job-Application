@@ -77,7 +77,7 @@
         border: none;
         border-radius: 40px;
     }
-    
+
 
 </style>
 <body class="background">
@@ -440,3 +440,4 @@
 
 </body>
 </html>
+<jsp:include page="footer.jsp"/>

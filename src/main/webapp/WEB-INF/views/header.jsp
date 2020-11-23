@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Nepal Home Stay</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -54,7 +55,7 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #808080;height: 50px" id="nav">
+<%--<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #808080;height: 50px" id="nav">
     <a class="navbar-brand" href="/home">Tristee Call Center</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +71,22 @@
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Logout</button>
         </form>
     </div>
-</nav>
+</nav>--%>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" id="nav">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="/home" class="w3-bar-item w3-button">Treesa Call Center</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a class="w3-bar-item w3-button" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Exam</a>
+            <a class="w3-bar-item w3-button" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
+            <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Exam</a>
+            <a class="w3-bar-item w3-button" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Exams</a>
+            <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/logout">Logout</a>
+        </div>
+    </div>
+</div>
 
 </body>
 

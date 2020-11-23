@@ -151,3 +151,4 @@
     });
 </script>
 </html>
+<jsp:include page="footer.jsp"/>

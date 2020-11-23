@@ -81,12 +81,15 @@
                         </tbody>
                     </table>
                 </div>
+                <c:if test="${user.questionAnswer ne null}">
                 <div class="card-footer">
                     <strong>Overall Status</strong>
                     <span class="float-right">${user.questionAnswer.totalPercentage > 40 ? 'pass' : 'fail'}</span>
                 </div>
+                </c:if>
             </div>
         </div>
+<c:if test="${user.questionAnswer ne null}">
         <div class="col-md-12" style="margin-top: 100px;">
             <div class="card shadow  p-3">
                 <div class="card-title">
@@ -112,7 +115,7 @@
                                  <i class="fa fa-check-circle" aria-hidden="true"></i>
                              </c:if>
                                 <c:if test="${correctAnswers.spiceNepal ne 'a.2004 A.D'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                              </c:if>
                             </td>
                         </tr>
@@ -126,7 +129,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.callRate ne 'a. 2.54Rs'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -140,7 +143,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.balanceTranasferTimes ne 'b. 3'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -154,7 +157,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.postoaidUserLoan ne 'b. False'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -168,7 +171,7 @@
                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
                                </c:if>
                                <c:if test="${correctAnswers.customerFreeCall ne 'c. 30'}">
-                                   <i class="fa fa-trash" aria-hidden="true"></i>
+                                   <i class="fa fa-close" aria-hidden="true"></i>
                                </c:if>
                            </td>
                         </tr>
@@ -182,7 +185,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.customerComplain ne 'a. 9005'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -196,7 +199,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.pin ne 'b. No'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -211,7 +214,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.recharge ne 'a. Yes'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -225,7 +228,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.fourG ne 'b. False'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -239,7 +242,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.nameRegister ne 'c. *903#'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -253,7 +256,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.requirements ne 'c. Original Document only'}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -267,7 +270,7 @@
                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 </c:if>
                                 <c:if test="${correctAnswers.balance ne 'd. None of the above '}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <i class="fa fa-close" aria-hidden="true"></i>
                                 </c:if>
                             </td>
                         </tr>
@@ -275,7 +278,9 @@
                 </div>
             </div>
         </div>
+</c:if>
     </div>
+        <c:if test="${user.questionAnswer ne null}">
     <div class="col-md-12" style="margin-top: 100px;">
         <div class="card shadow  p-3">
             <div class="card-title">
@@ -299,6 +304,7 @@
             </div>
         </div>
     </div>
+        </c:if>
 
 </div>
 </body>
@@ -348,3 +354,4 @@
     })
 </script>
 </html>
+<jsp:include page="footer.jsp"/>
