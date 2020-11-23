@@ -4,6 +4,7 @@ import com.customercrud.callcenter.core.UserType;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.services.questionAnswer.QuestionAnswerService;
 import com.customercrud.callcenter.services.user.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -65,9 +67,11 @@ public class ViewController {
     }
 
     @GetMapping("/question-answer/{id}")
-    public String loadQuestionAnswerIndividual(@PathVariable String id, ModelMap modelMap){
+    public String loadQuestionAnswerIndividual(@PathVariable String id, ModelMap modelMap) throws IOException {
         User user = userService.findById(Integer.valueOf(id));
+        Object correctAnswers = new ObjectMapper().readValue(user.getQuestionAnswer().getRatingData() , Object.class);
         modelMap.put("user" , user);
+        modelMap.put("correctAnswers" , correctAnswers);
         return "individual-questionAnswer";
     }
     @GetMapping("/summary")

@@ -71,7 +71,7 @@
                 </button>
 
             </a>
-            <a onclick="window.location.href= '/questionAnswer/'+ sessionStorage.getItem('userId')">
+            <a onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')">
                 <button type="button" class="btn btn-success ml-4">
                     View My Answer
                 </button>
