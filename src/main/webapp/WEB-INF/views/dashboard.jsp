@@ -46,7 +46,7 @@
 
 </style>
 <body>
-<main id="boxes" class="background">
+<main id="boxes" class="cream">
     <div id="column1">
         <img class="d-block img-fluid"
              src="https://avatoon.net/wp-content/uploads/elementor/thumbs/Order-Your-Own-Cartoon-Profile-Illustration-op5rnza2dgg163s0gbpb2p2rhtqcc8hwq7ftiqjzy0.png"

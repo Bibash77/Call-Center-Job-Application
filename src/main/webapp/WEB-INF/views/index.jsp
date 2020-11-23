@@ -89,11 +89,16 @@
             position: absolute;
             bottom: 40px;
             padding-left: 20px;
+            color: yellowgreen;
+            -webkit-text-stroke: 0.1px black;        }
+
         }
 
         .banner-text h2 {
-            color: #fff;
+            color: yellowgreen;
             font-weight: 600;
+            -webkit-text-stroke: 0.1px black;        }
+
         }
 
         .banner-text h2:after {
@@ -107,8 +112,8 @@
         }
 
         .banner-text p {
-            color: #fff;
-        }
+            color: yellowgreen;
+            -webkit-text-stroke: 0.1px black;        }
     </style>
 </head>
 <body class="background">
@@ -201,13 +206,12 @@
                                  alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="banner-text">
-                                    <h2>Welcome to Mother Treesta School</h2>
-                                    <p>Mother Trisha School is a multicultural community in the foothills of the
-                                        Himalayas
-                                        that inspires in each student a passion for learning, the confidence and
-                                        competence to pursue their dreams, and the commitment to serve as a
-                                        compassionate global citizen and leader, who is a steward of the
-                                        environment.</p>
+                                    <h2>Welcome to Call Center</h2>
+                                    <p>A call center (US spelling; see spelling differences) or call centre (British
+                                        and Commonwealth spelling) is a centralised office used for receiving or
+                                        transmitting a large volume of enquiries by telephone. An inbound call
+                                        centre is operated by a company to administer incoming product or servic
+                                        e support or information enquiries from consumers.</p>
                                 </div>
                             </div>
                         </div>
@@ -217,11 +221,12 @@
                                  alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="banner-text">
-                                    <h2>Our Schools</h2>
-                                    <p>Mother Trisha School offers an American curriculum with an international
-                                        perspective.
-                                        The program is college preparatory with a wide selection of electives and
-                                        extracurricular activities leading to an American high school diploma.</p>
+                                    <h2>Our Service</h2>
+                                        <ul>
+                                            <li>Inbound</li>
+                                            <li>Outbound</li>
+
+                                        </ul>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 <jsp:include page="header.jsp"/>
 <html>
 <head>
-    <title>FeedBack</title>
+    <title>Call Center Question Answer</title>
 </head>
 <style>
     /*label:before {*/
@@ -80,8 +80,8 @@
     
 
 </style>
-<body class="background">
-<div style="border: double #ffffff; margin-top: 110px;">
+<body class="questionAnswer">
+<div style="border: thick inset #87ceeb;margin-top: 110px;">
     <div class="row">
         <div class="offset-4 col-md-4">
             <h4 class="text-white"><u>Submit Your Answers</u></h4>
@@ -372,8 +372,9 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-sucess" value="ok" id="submit" onclick="submitForm()">Submit Answer</button>
     </form>
+    <button type="button" class="btn cream" style="float: left; color: white;"
+            onclick="submitForm()">Submit Answer</button>
 </div>
 
 <script>
