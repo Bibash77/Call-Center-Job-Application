@@ -5,116 +5,199 @@
 <head>
     <title>Dashboard</title>
 </head>
+<style>
+    #boxes {
+        content: "";
+        display: table;
+        clear: both;
+        height: 100%;
+    }
+    /*#container {*/
+    /*    float: left;*/
+    /*    height: 470px;*/
+    /*    width: 100%;*/
+    /*    padding: 0 10px;*/
+    /*}*/
+    #column1 {
+        background-color: #a1edcc;
+        width: 25%;
+        float: left;
+    }
+    #column2 {
+        background-color: #a0e9ed;
+        width: 75%;
+        float: right;
+    }
+    #column3 {
+        background-color: #000000;
+        color: yellow;
+        width: 100%;
+        align-content: center;
+
+    }
+    h2 {
+        color: #000000;
+        text-align: center;
+    }
+    img {
+        border-radius: 50%;
+    }
+
+
+</style>
 <body>
-<img src="img/img.png">
-<!-- START THE FEATURETTES -->
-<div class="jumbotron text-center bg-img">
-    <h1>Trsitee Call Center</h1>
-    <p>Stay Connected Everywhere!</p>
-  <%--  <img src="../static/img/homestay.png">--%>
-    <%--actions button will be shown if user type is administrator--%>
-    <div class="row justify-content-center" id="admin-block" hidden>
-        <a href="#" data-toggle="modal" data-target="#registerModal">
-        <button type="button" class="btn background" data-toggle="modal" data-target="#exampleModal">
-            Register User
-        </button>   </a>
-        <a href="${pageContext.request.contextPath}/questionAnswer-list">
-            <button type="button" class="btn btn-success ml-4">
-                View All Answer
-            </button>
-        </a>
-    </div>
-    <%--action to be shown if user type is normal user--%>
-    <div class="row justify-content-center" id="user-block" hidden>
-        <a href="${pageContext.request.contextPath}/questionAnswer">
-            <button type="button" class="btn background ml-4">
-                Give Exam
-            </button>
+<main id="boxes" class="background">
+    <div id="column1">
+        <img class="d-block img-fluid"
+             src="https://avatoon.net/wp-content/uploads/elementor/thumbs/Order-Your-Own-Cartoon-Profile-Illustration-op5rnza2dgg163s0gbpb2p2rhtqcc8hwq7ftiqjzy0.png"
+             width="200" height="200"/>
+        <%--actions button will be shown if user type is administrator--%>
+        <div class="row justify-content-center" id="admin-block" hidden>
+            <a href="#" data-toggle="modal" data-target="#registerModal">
+                <button type="button" class="btn background" data-toggle="modal" data-target="#exampleModal">
+                    Register User
+                </button>   </a>
+            <a href="${pageContext.request.contextPath}/questionAnswer-list">
+                <button type="button" class="btn btn-success ml-4">
+                    View All Answer
+                </button>
+            </a>
+        </div><br>
+        <%--action to be shown if user type is normal user--%>
+        <div class="row justify-content-center" id="user-block" hidden>
+            <a href="${pageContext.request.contextPath}/questionAnswer">
+                <button type="button" class="btn background ml-4">
+                    Give Exam
+                </button>
 
-        </a>
-        <a onclick="window.location.href= '/questionAnswer/'+ sessionStorage.getItem('userId')">
-            <button type="button" class="btn btn-success ml-4">
-                View My Answer
-            </button>
+            </a>
+            <a onclick="window.location.href= '/questionAnswer/'+ sessionStorage.getItem('userId')">
+                <button type="button" class="btn btn-success ml-4">
+                    View My Answer
+                </button>
 
-        </a>
-    </div>
-</div>
-<div class="container-fluid home-content1">
-    <div class="row">
-        <div class="col-md-4 content1-left">
-            <h3 class="text-secondary">Introduction</h3>
-            <!-- <div class="content1-left"></div> -->
-        </div>
-        <div class="col-md-8 content1-right">
-            <p>
-                Belkot is a beautiful village that is surrounded by green hills and terrace farms. You are welcome to
-                participate in some of the traditional farming practices and assist your hosts in their fields. You
-                might like to try your hand planting rice with the muddy fields, or just explore the diverse culture and
-                lifestyle within this small community with your Nepalese family.</p>
+            </a>
         </div>
     </div>
-</div>
-<hr>
-<div class="container-fluid home-content1 mt-4">
-    <div class="row">
-        <div class="col-md-4 content1-left">
-            <h3 class="text-secondary">About the
-                Homestay</h3>
-            <!-- <div class="content1-left"></div> -->
+    <div id="column2">
+
+        <div class="jumbotron text-center bg-img">
+            <h1>Trsitee Call Center</h1>
+            <p>Stay Connected Everywhere!</p>
+            <%--  <img src="../static/img/homestay.png">--%>
+
         </div>
-        <div class="col-md-8 content1-right">
-            <p>
-                Seven homestays comprise the Nuwakot Community Homestay, in the village of Belkot. This is quite a poor
-                village, even by Nepali standards, so the lifestyle is simple here. The accommodation is also simple,
-                but adequate to meet your needs. Clean linen will be provided for the beds. </p>
-            <p>
-                As at all Community Homestays in Nepal that are part of this project, you’ll have a private room that’s
-                in close proximity to your host family. So, you can enjoy private time when you feel like it, but also
-                socialise with your hosts when you want.</p>
-            <p>
-                Bathrooms are located outside, detached from the main house, as is common in rural Nepal. Toilets are
-                squat-style. Toilet paper will be provided.</p>
-            <p>
-                Your stay includes breakfast, lunch, and dinner at the homestay. Authentic Nepali food as it is prepared
-                in rural areas is filling and nutritious, usually made with fresh and locally grown ingredients. While
-                Nepali dal bhat is famous and you’ll get many chances to eat it during your travels in Nepal, it’s
-                always interesting to see the regional variations. Your hosts in Belkot will prepare the meal with local
-                touches, depending on what’s in season and available.</p>
-
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <strong>About Belkot, Nuwakot</strong>
-
-                    <p class="justify-center">
-                        ‘Nuwakot’ actually means ‘nine forts’, and Belkot is one of those nine that once stood around
-                        the
-                        Nuwakot area. Nuwakot district is a culturally and historically rich area, as well as being
-                        naturally attractive. There’s lots to see and do here.
-                    </p>
-                    <p class="justify-center">
-                        In Belkot itself, a highlight is watching your hosts and the other villagers at work on their
-                        farms.
-                        The village is surrounded by terraced farmland, which is dazzlingly green after the rains. A
-                        walk
-                        with your hosts around the community is included in your stay package. If you happen to be in
-                        town
-                        during the right season (early monsoon), you can even help plant rice.
-                    </p>
+        <div class="container-fluid home-content1">
+            <div class="row">
+                <div class="col-md-4 content1-left">
+                    <h3 class="text-secondary">Introduction</h3>
+                    <!-- <div class="content1-left"></div> -->
+                </div>
+                <div class="col-md-8 content1-right">
                     <p>
-                        Belkot is a poor village that suffered a lot of damage from natural disasters. If you’re
-                        interested
-                        in volunteering at the local high school, your generous donation of time would be greatly
-                        appreciated. Volunteering allows you to stay in the village a bit longer and become more
-                        intimately
-                        acquainted with Nepali village life. Even if you can’t volunteer, you’re welcome to visit the
-                        school.
-                    </p>
+                        A call centre/call center is a centralised office used for the purpose of receiving and transmitting a large volume of requests by telephone. It can also be described as a service centre with sufficient telecom, internet facilities and wide collection of database, which provides voice based or web-based information and support to customers based in the country or aboard through trained personnel. Call centre can be seen in all sectors of business activities. The sectors where call centers can work are unlimited. Most major businesses use call centre to interact with their customers. Examples include utility companies, banking, utilities, manufacturing, security, market research, pharmaceuticals, catalogue sales, order desk, customer service, technical queries (help desk), emergency dispatch, credit collections, food service, airline/hotel reservations etc. Some businesses even service internal functions through call centre. Examples of this include help desks, retail financial support, and sales support..</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid home-content1 mt-4">
+            <div class="row">
+                <div class="col-md-4 content1-left">
+                    <h3 class="text-secondary">Our Service</h3>
+                    <!-- <div class="content1-left"></div> -->
+                </div>
+                <div class="col-md-8 content1-right">
+                    <h5>Inbound </h5>
+                    <p> <img src="https://www.w3.org/WAI/WCAG21/Understanding/img/contrast-phone.png" style="float: right; width: 30%; height: 20%">
+                        Inbound services focus on taking the incoming phone calls to your business or organization. Examples of the many inbound services include: telephone answering, order processing, dispatch and help desk services.
+                        An inbound call center is responsible for incoming calls. When a customer calls, the call center picks up the phone and takes care of the customer’s request – it’s usually a matter of classic customer service. Inbound examples include telephone services such as a hotline, “first level support” or a help or service desk where customers can report faults, submit complaints or order products.<p>
+                    Customer demands are rising continuously. Customers expect flawless communication, immediate answers and even faster solutions – but for many companies this is not always possible. Inbound call centers provide a solution – while you offer your customers excellent support, you gain more time for your core business. With a good call center, you optimize the customer experience and avoid a loss of revenue due to annoyed customers.
+                     </p>
+                    <p>
+                    <h5>Outbound </h5>
+                    <p> <img src="https://cdn1.iconfinder.com/data/icons/man-user-human-profile-avatar-business-person/100/09-1User_1-3-512.png" style="float: right; width: 30%; height: 20%">
+
+                        An outbound call center is one in which call center agents make outbound calls to customers on behalf of a business or client. Calls made from the center can include telemarketing, sales or fund-raising calls, as well as calls for contact list updating, surveys or verification services. A call center may handle either outbound or inbound calls exclusively or might deal with a combination of the two. An outbound call center uses distinct metrics to measure agent success, such as cost per call, revenue earned, total calls made and tasks completed. An inbound call center uses different metrics, such as first call resolution (FCR). With the passage of legislation in 2003, the National Do Not Call Registry established a do-not-call list in the United States..</p>
+
                 </div>
             </div>
         </div>
     </div>
+
+</main>
+<div id="column3">
+    Contact:9841355789,Kathmandu Nepal
 </div>
+</body>
+<img src="img/img.png">
+<!-- START THE FEATURETTES -->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+  //according to loftblog tut
+  $(".main-menu li:first").addClass("active");
+
+  var showSection = function showSection(section, isAnimate) {
+    var direction = section.replace(/#/, ""),
+        reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+        ),
+        reqSectionPos = reqSection.offset().top - 0;
+
+    if (isAnimate) {
+      $("body, html").animate(
+          {
+            scrollTop: reqSectionPos
+          },
+          800
+      );
+    } else {
+      $("body, html").scrollTop(reqSectionPos);
+    }
+  };
+
+  var checkSection = function checkSection() {
+    $(".section").each(function() {
+      var $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var currentId = $this.data("section"),
+            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+        reqLink
+        .closest("li")
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+      }
+    });
+  };
+
+  $(".main-menu").on("click", "a", function(e) {
+    e.preventDefault();
+    showSection($(this).attr("href"), true);
+  });
+
+  $(window).scroll(function() {
+    checkSection();
+  });
+</script>
+</body>
+</html>
+
 
 <%--register modal--%>
 <!-- Modal -->
