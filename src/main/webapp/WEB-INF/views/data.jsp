@@ -125,12 +125,12 @@
                     alert("no data found !!");
 
                 } else {
-                    console.log(data);
-                 document.getElementById("name").innerText = data.name;
-                 document.getElementById("humidity").innerText = data.main.humidity + ' g.kg-1';
-                 document.getElementById("pressure").innerText = data.main.pressure + ' pascal';
-                 document.getElementById("temp_max").innerText = data.main.temp_max + '° celsius';
-                 document.getElementById("temp_min").innerText = data.main.temp_min + '° celsius';
+                    document.getElementById("name").innerText = data.name;
+                    document.getElementById("country").innerText = data.sys.country;
+                    document.getElementById("sunrise").innerText = new Date(data.sys.sunrise);
+                    document.getElementById("sunset").innerText = new Date(data.sys.sunset);
+                    document.getElementById("temp").innerText = data.main.temp + '° celsius';
+                    document.getElementById("visibility").innerText = data.visibility + ' kilometre';
                     document.getElementById("feels_like").innerText = data.main.feels_like + '° celsius';
                     document.getElementById("description").innerText = data.weather[0].description;
                 }
@@ -141,3 +141,4 @@
     }
 </script>
 </html>
+<jsp:include page="footer.jsp"/>
