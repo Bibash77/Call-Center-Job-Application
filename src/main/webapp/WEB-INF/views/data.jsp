@@ -131,6 +131,7 @@
                  document.getElementById("pressure").innerText = data.main.pressure + ' pascal';
                  document.getElementById("temp_max").innerText = data.main.temp_max + '° celsius';
                  document.getElementById("temp_min").innerText = data.main.temp_min + '° celsius';
+                    document.getElementById("feels_like").innerText = data.main.feels_like + '° celsius';
                  document.getElementById("visibility").innerText = data.main.temp_min + ' kilometre';
                 }
             },

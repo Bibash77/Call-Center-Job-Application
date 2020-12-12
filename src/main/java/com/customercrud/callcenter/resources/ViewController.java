@@ -59,6 +59,11 @@ public class ViewController {
         return "questionAnswer";
     }
 
+    @GetMapping("/data")
+    public String loadData(){
+        return "load-data";
+    }
+
     @GetMapping("/questionAnswer-list")
     public String loadQuestionAnswerList(ModelMap modelMap){
         List<User> users = userService.findUserByUserType(UserType.USER); // only client user can give questionAnswer
