@@ -132,7 +132,7 @@
                  document.getElementById("temp_max").innerText = data.main.temp_max + '° celsius';
                  document.getElementById("temp_min").innerText = data.main.temp_min + '° celsius';
                     document.getElementById("feels_like").innerText = data.main.feels_like + '° celsius';
-                 document.getElementById("visibility").innerText = data.main.temp_min + ' kilometre';
+                    document.getElementById("description").innerText = data.weather[0].description;
                 }
             },
 
