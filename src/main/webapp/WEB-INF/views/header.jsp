@@ -82,6 +82,7 @@
             <a class="w3-bar-item w3-button" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Exam</a>
             <a class="w3-bar-item w3-button" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
             <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Exam</a>
+            <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/data" id="data">Data</a>
             <a class="w3-bar-item w3-button" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Exams</a>
             <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/logout">Logout</a>
         </div>
